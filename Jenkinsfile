@@ -1,6 +1,6 @@
 //Pipeline 
 pipelineJob('ci-pipeleine') {
-  description('CI Pipeline to build and upload the image to GCR')
+  description('CI Pipeline to build and upload the image to Google GCR')
    triggers {
         githubPush()
     }
