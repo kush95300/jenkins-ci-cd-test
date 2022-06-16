@@ -1,5 +1,7 @@
 pipeline {
     agent any
+    triggers {
+    }
     stages {
         stage('scm') {
             steps {
