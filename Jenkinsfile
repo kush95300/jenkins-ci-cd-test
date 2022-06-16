@@ -6,3 +6,12 @@ pipelineJob('ci-pipeleine') {
         }
   }
 }
+
+pipelineJob('cd-pipeleine') {
+  definition {
+    cps {
+          script(readFileFromWorkspace('scripts/cd-pipeline.groovy'))
+        }
+  }
+}
+
