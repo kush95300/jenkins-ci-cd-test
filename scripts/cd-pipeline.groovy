@@ -1,15 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('Example') {
+        stage('deploy') {
             steps {
-                echo 'CD Pipeline'
+                echo 'Deploying the image to Gke'
             }
         }
     }
     post { 
         always { 
-            echo 'I will always say Hello again!'
+            echo 'Image deployed send email'
         }
     }
 }
