@@ -4,6 +4,7 @@ pipeline {
         stage('deploy') {
             steps {
                 echo 'Deploying the image to Gke'
+                //sh 'docker push gcr.io/kush95300/test-application'
             }
         }
     }
