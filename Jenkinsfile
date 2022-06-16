@@ -1,8 +1,8 @@
 //Pipeline 
-job('test') {
-  description = 'test'
-  steps {
-    shell('echo Hello World!')
+pipelineJob('ci-pipeleine') {
+  definition {
+    cps {
+          script(readFileFromWorkspace('scripts/ci-pipeline.groovy'))
+        }
   }
-
 }
