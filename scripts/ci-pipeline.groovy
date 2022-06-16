@@ -28,6 +28,9 @@ pipeline {
         }
     }
     post { 
+        success { 
+            build job: 'cd-pipeleine'
+        }
         always { 
             echo 'Image uploaded send email'
         }
